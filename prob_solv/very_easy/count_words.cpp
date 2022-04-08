@@ -1,0 +1,11 @@
+nt camelcase(string s) {
+int count=1;
+for(int i=0;s[i]!='\0';i++)
+{
+    if(s[i]>='A'&& s[i]<='Z')
+    {
+        count=count+1;
+}
+}
+return count;
+}
