@@ -11,13 +11,13 @@ void tripletsum(int arr[],int n, int k)
         while(j<l){
         if(arr[i]+arr[j]+arr[l]==k)
         {
-            cout<<arr[i]<<' '<<arr[j]<<' '<<arr[l];
+            cout<<arr[i]<<' '<<arr[j]<<' '<<arr[l]<<endl;
             j++;        //To find all possible outputs we need to perform 
-            k--;       //incrementation and decrementation 
+            l--;       //incrementation and decrementation 
         }
         else if(arr[i]+arr[j]+arr[l]<k)
         {
-            i++;
+            j++;
         }
         else if(arr[i]+arr[j]+arr[l]>k)
         {
